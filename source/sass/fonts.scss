@@ -1,12 +1,15 @@
 @font-face {
+  font-weight: 400;
   font-family: "Europe";
   font-style: normal;
+
   src: url("../fonts/eur.woff2") format("woff2"), url("../fonts/eur.woff") format("woff");
 }
 
 @font-face {
+  font-weight: 700;
   font-family: "Europe";
-  font-style: bold;
+  font-style: normal;
+
   src: url("../fonts/eur-b.woff2") format("woff2"), url("../fonts/eur-b.woff") format("woff");
 }
-
