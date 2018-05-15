@@ -7,23 +7,39 @@
   padding-bottom: 100px;
   padding-left: 16%;
 
-  background-image: url("../img/form-bg@1x.png");
   background-size: cover;
 
-  &--request-successfully {
+  &--request {
     display: none;
+
+    background-image: url("../img/form-bg@1x.png");
+  }
+
+  &--successfully {
+    justify-content: flex-start;
+
+    background-image: none;
+    //display: none;
   }
 }
 
 .form-section__title {
-  width: 64%;
   margin: 0;
-  margin-bottom: 170px;
 
   font-weight: 400;
   font-size: 50px;
   line-height: 65px;
   color: #ffffff;
+
+  &--request {
+    width: 64%;
+    margin-bottom: 170px;
+  }
+
+  &--successfully {
+    width: 100%;
+    margin-bottom: 95px;
+  }
 }
 
 .form-section__indicator {
@@ -173,4 +189,87 @@
 
 .form-section__agreement-input:focus + .form-section__agreement-label {
   outline: auto 2px Highlight;
+}
+
+.form-section__descr-wrap {
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.form-section__descr {
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.form-section__descr-link {
+  color: #ff001a;
+
+  cursor: pointer;
+}
+
+.form-section__link {
+  position: relative;
+
+  flex-grow: 1;
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+
+  &--home {
+    flex-grow: 3;
+    min-width: 520px;
+    padding-right: 85px;
+    padding-left: 115px;
+  }
+
+  &--call {
+    min-width: 410px;
+    padding-right: 65px;
+    padding-left: 95px;
+  }
+}
+
+.form-section__link-descr {
+  position: relative;
+
+  display: block;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+
+    background-size: cover;
+    transform: translate(0, -50%);
+  }
+
+  &--home {
+    //При смене текста "На главную страницу", изменить left
+    &::before {
+      left: calc(50% - 196px);
+
+      width: 16px;
+      height: 12px;
+
+      background-image: url("../img/link-home-icon.svg");
+    }
+  }
+
+  &--call {
+    //При смене текста "Перезвоните мне", изменить left
+    &::before {
+      left: calc(50% - 160px);
+
+      width: 14px;
+      height: 14px;
+
+      background-image: url("../img/link-phone-icon.svg");
+    }
+  }
 }

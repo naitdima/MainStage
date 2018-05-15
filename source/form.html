@@ -2,14 +2,14 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!--<meta name="viewport" content="width=device-width,initial-scale=1">-->
   <title>Main Stage - Получить презентацию</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <form class="form" action="echo.htmlacademy.ru" method="post">
     <section class="form-section  form-section--request">
-      <h1 class="form-section__title">Введите ваши контакные данные</h1>
+      <h1 class="form-section__title  form-section__title--request">Введите ваши контакные данные</h1>
       <p class="form-section__indicator"><span class="form-section__indicator-active">1</span> / 1</p>
       <ul class="form-section__list">
         <li class="form-section__item">
@@ -29,12 +29,14 @@
       </div>
     </section>
 
-    <section class="form-section  form-section--request-successfully">
-      <h1 class="form-section__title">Успешно!</h1>
-      <p class="form-section__descr">Мы отправили на указанный вами E-mail адрес письмо с планировкой / презентацией</p>
-      <p class="form-section__descr">Так же вы можете скачать презентацию / планировку <a class="form-section__descr-link" href="#">по этой ссылке</a></p>
-      <a class="form-section__link" href="index.html">На главную страницу</a>
-      <a class="form-section__link" href="#">Перезвоните мне</a>
+    <section class="form-section  form-section--successfully">
+      <h1 class="form-section__title  form-section__title--successfully">Успешно!</h1>
+      <div class="form-section__descr-wrap">
+        <p class="form-section__descr">Мы отправили на указанный вами E-mail адрес письмо с планировкой / презентацией</p>
+        <p class="form-section__descr">Так же вы можете скачать презентацию / планировку <a class="form-section__descr-link" href="#">по&nbsp;этой&nbsp;ссылке</a></p>
+      </div>
+      <a class="btn  form-section__link  form-section__link--home" href="index.html"><span class="form-section__link-descr  form-section__link-descr--home">На главную страницу</span></a>
+      <a class="btn  form-section__link  form-section__link--call" href="#"><span class="form-section__link-descr  form-section__link-descr--call">Перезвоните мне</span></a>
     </section>
   </form>
 </body>
