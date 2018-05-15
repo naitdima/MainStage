@@ -10,7 +10,14 @@ html {
 }
 
 body {
-  
+  margin: 0;
+  overflow-x: hidden;
+
+  font-family: "Europe", Arial, sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+
+  background-color: #26313f;
 }
 
 a {
@@ -20,4 +27,18 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
 }

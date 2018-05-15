@@ -1,0 +1,296 @@
+.form-section {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 175px;
+  padding-right: 32%;
+  padding-bottom: 100px;
+  padding-left: 16%;
+
+  background-size: cover;
+
+  &--request {
+    background-image: url("../img/form-bg@1x.png");
+  }
+
+  &--successfully {
+    display: none;
+    justify-content: flex-start;
+
+    background-image: none;
+  }
+}
+
+.form-section__home-link {
+  content: "";
+  position: absolute;
+  top: 190px;
+  left: 7%;
+
+  width: 38px;
+  height: 24px;
+
+  background-image: url("../img/form-go-home-icon.svg");
+  background-size: cover;
+}
+
+.form-section__title {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 65px;
+  color: #ffffff;
+
+  &--request {
+    width: 64%;
+    margin-bottom: 170px;
+  }
+
+  &--successfully {
+    width: 100%;
+    margin-bottom: 95px;
+  }
+}
+
+.form-section__indicator {
+  display: block;
+  width: 36%;
+  margin-bottom: 170px;
+
+  font-size: 30px;
+  line-height: 39px;
+  text-align: right;
+  color: #ffffff;
+}
+
+.form-section__indicator-active {
+  color: #ff001a;
+}
+
+.form-section__list {
+  @include list-reset;
+
+  display: grid;
+  width: 100%;
+  margin-bottom: 150px;
+
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.form-section__input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 30px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "Europe", Arial, sans-serif;
+  color: #ffffff;
+
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  }
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "Europe", Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  &:hover::placeholder {
+    color: #ffffff;
+  }
+
+  &:focus::placeholder {
+    font-size: 0;
+  }
+}
+
+.form__btn {
+  position: relative;
+
+  flex-grow: 1;
+  min-width: 530px;
+  margin-bottom: 80px;
+  padding-right: 70px;
+  padding-left: 115px;
+
+  //При смене текста "Получить презентацию", изменить left
+  &::before {
+    content: "";
+    position: absolute;
+    top: 33px;
+    left: calc(50% - 187px);
+
+    width: 16px;
+    height: 22px;
+
+    background-image: url("../img/form-btn-icon.svg");
+    background-size: cover;
+  }
+}
+
+.form-section__agreement {
+  display: flex;
+  flex-grow: 2;
+  justify-content: flex-end;
+  align-items: center;
+  min-width: 350px;
+  margin-bottom: 80px;
+  margin-left: 100px;
+  padding-left: 50px;
+}
+
+.form-section__agreement-label {
+  position: relative;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  font-size: 12px;
+  line-height: 14px;
+  text-align: right;
+  color: #777777;
+
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: calc(100% + 50px);
+
+    width: 24px;
+    height: 24px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: calc(100% + 50px);
+
+    display: none;
+    width: 24px;
+    height: 24px;
+
+    background-image: url("../img/agreement-input-check.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 10px 6px;
+  }
+}
+
+.form-section__agreement-input:checked + .form-section__agreement-label {
+  &::after {
+    display: block;
+  }
+}
+
+.form-section__agreement-input:focus + .form-section__agreement-label {
+  outline: auto 2px Highlight;
+}
+
+.form-section__descr-wrap {
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.form-section__descr {
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.form-section__descr-link {
+  color: #ff001a;
+
+  cursor: pointer;
+}
+
+.form-section__link {
+  position: relative;
+
+  flex-grow: 1;
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+
+  &:hover {
+    background-color: #ff001a;
+  }
+
+  &--home {
+    flex-grow: 3;
+    min-width: 520px;
+    padding-right: 85px;
+    padding-left: 115px;
+  }
+
+  &--call {
+    min-width: 410px;
+    padding-right: 65px;
+    padding-left: 95px;
+  }
+}
+
+.form-section__link-descr {
+  position: relative;
+
+  display: block;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+
+    background-size: cover;
+    transform: translate(0, -50%);
+  }
+
+  &--home {
+    //При смене текста "На главную страницу", изменить left
+    &::before {
+      left: calc(50% - 196px);
+
+      width: 16px;
+      height: 12px;
+
+      background-image: url("../img/link-home-icon.svg");
+    }
+  }
+
+  &--call {
+    //При смене текста "Перезвоните мне", изменить left
+    &::before {
+      left: calc(50% - 160px);
+
+      width: 14px;
+      height: 14px;
+
+      background-image: url("../img/link-phone-icon.svg");
+    }
+  }
+}
