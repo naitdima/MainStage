@@ -4,26 +4,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Main Stage - Получить презентацию</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <form class="form" action="">
-    <section class="form-section">
+  <form class="form" action="echo.htmlacademy.ru" method="post">
+    <section class="form-section  form-section--request">
       <h1 class="form-section__title">Введите ваши контакные данные</h1>
       <p class="form-section__indicator"><span class="form-section__indicator-active">1</span> / 1</p>
       <ul class="form-section__list">
         <li class="form-section__item">
-          <input class="form-section__input" type="text">
+          <input class="form-section__input" type="text" name="name" placeholder="Как к Вам обращаться?">
         </li>
         <li class="form-section__item">
-          <input class="form-section__input" type="text">
+          <input class="form-section__input" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
         </li>
         <li class="form-section__item">
-          <input class="form-section__input" type="text">
+          <input class="form-section__input" type="email" name="email" placeholder="d.chkprod@gmail.com">
         </li>
       </ul>
       <button class="btn  form__btn" type="submit">Получить презентацию</button>
       <div class="form-section__agreement">
-        <input class="visually-hidden" id="agreement-input" type="text">
+        <input class="visually-hidden  form-section__agreement-input" id="agreement-input" type="checkbox" name="agreement">
         <label class="form-section__agreement-label" for="agreement-input">&#171;Согласен(-на) с политикой конфиденциальности&#187;</label>
       </div>
     </section>
