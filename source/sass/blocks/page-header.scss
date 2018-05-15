@@ -2,8 +2,9 @@
   position: relative;
 
   padding-top: 525px;
+  padding-right: 26%;
   padding-bottom: 175px;
-  padding-left: 205px;
+  padding-left: 10%;
 
   &::before {
     content: "";
@@ -22,7 +23,7 @@
 }
 
 .page-header__title {
-  width: 1000px;
+  width: 100%;
   margin: 0;
   margin-bottom: 60px;
 
