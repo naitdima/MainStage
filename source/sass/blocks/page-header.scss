@@ -20,6 +20,19 @@
     background-size: cover;
     box-shadow: 0 4px 250px rgba(255, 255, 255, 0.1);
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10%;
+
+    width: 1px;
+    height: 400px;
+
+    background: linear-gradient(#ffffff, rgba(255, 255, 255, 0));
+    opacity: 0.1;
+  }
 }
 
 @media (min-resolution: 1.5dppx) {
@@ -36,6 +49,26 @@
   font-weight: 700;
   font-size: 62px;
   line-height: 74px;
+}
+
+.page-header__link-wrap {
+  position: relative;
+
+  width: 100%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 570px;
+
+    width: 59%;
+    height: 1px;
+
+    background-color: #c4c4c4;
+    transform: translate(0, -50%);
+    opacity: 0.4;
+  }
 }
 
 .page-header__link {
