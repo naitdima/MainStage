@@ -13,6 +13,7 @@
 
   &--request {
     display: none;
+
     background-image: url("../img/form-bg@1x.png");
   }
 
@@ -25,6 +26,12 @@
 
   &--show {
     display: flex;
+  }
+}
+
+@media (min-resolution: 1.5dppx) {
+  .form-section--request {
+    background-image: url("../img/form-bg@2x.png");
   }
 }
 
@@ -94,7 +101,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  font-family: "Europe", Arial, sans-serif;
+  font-family: $main-font;
   color: #ffffff;
 
   background: none;
@@ -111,7 +118,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-    font-family: "Europe", Arial, sans-serif;
+    font-family: $main-font;
     color: rgba(255, 255, 255, 0.7);
   }
 
