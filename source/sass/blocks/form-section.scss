@@ -12,6 +12,7 @@
   background-size: cover;
 
   &--request {
+    display: none;
     background-image: url("../img/form-bg@1x.png");
   }
 
@@ -20,6 +21,10 @@
     justify-content: flex-start;
 
     background-image: none;
+  }
+
+  &--show {
+    display: flex;
   }
 }
 
