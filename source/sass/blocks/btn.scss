@@ -1,18 +1,16 @@
 .btn {
   display: block;
-  padding: 35px 70px;
+  padding: 20px 32px;
 
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 12px;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 
-  background: #ff001a;
-  border: none;
+  background-color: #ff001a;
   border-radius: 3px;
   box-shadow: 0 0 250px #ff001a, 0 0 250px rgba(255, 0, 26, 0.2);
-  cursor: pointer;
 }
