@@ -14,9 +14,9 @@
       <div class="page-header__link-wrap">
         <a class="btn  page-header__link" href="form.html">Получить презентацию</a>
       </div>
-      <nav class="main-nav  main-nav--show">
+      <nav class="main-nav">
         <div class="main-nav__header">
-          <a class="main-nav__btn  main-nav__btn--close" href="menu.html">
+          <a class="main-nav__btn" href="menu.html">
             <span class="visually-hidden">Меню</span>
           </a>
           <a class="main-nav__logo">
@@ -43,7 +43,6 @@
             <a class="main-nav__link" href="">Контакты</a>
           </li>
         </ul>
-
         <ul class="main-nav__social-wrap">
           <li class="main-nav__social-wrap-item">
             <ul class="main-nav__social-list">
@@ -79,16 +78,120 @@
             </ul>
           </li>
         </ul>
-
         <ul class="main-nav__contacts-list">
           <li class="main-nav__contacts-item">
-            <a class="main-nav__contacts-link  main-nav__contacts-link--phone" href="#">+7 495 518 50 50</a>
+            <a class="main-nav__contacts-link  main-nav__contacts-link--phone" href="tel:+74955185050">+7 495 518 50 50</a>
           </li>
           <li class="main-nav__contacts-item">
-            <a class="main-nav__contacts-link  main-nav__contacts-link--place" href="#">ул. Шарикоподшипниковская, д.13, стр. 33</a>
+            <a class="main-nav__contacts-link  main-nav__contacts-link--place" href="map.html">ул. Шарикоподшипниковская, д.13, стр. 33</a>
           </li>
         </ul>
       </nav>
     </header>
+
+    <main class="page-content">
+      <section class="rooms">
+        <ul class="rooms__list">
+          <li class="rooms__item">
+            <a class="rooms__link" href="">Фойе</a>
+            <a class="rooms__link-img" href="">
+              <img class="rooms__item-img" src="" alt="">
+            </a>
+          </li>
+          <li class="rooms__item">
+            <a class="rooms__link" href="">Главный зал</a>
+            <a class="rooms__link-img" href="">
+              <img src="rooms__item-img" alt="">
+            </a>
+          </li>
+          <li class="rooms__item">
+            <a class="rooms__link" href="">Кухня</a>
+            <a class="rooms__link-img" href="">
+              <img src="rooms__item-img" alt="">
+            </a>
+          </li>
+          <li class="rooms__item">
+            <a class="rooms__link" href="">Гримерные</a>
+            <a class="rooms__link-img" href="">
+              <img src="rooms__item-img" alt="">
+            </a>
+          </li>
+          <li class="rooms__item">
+            <a class="rooms__link" href="">Туалеты</a>
+            <a class="rooms__link-img" href="">
+              <img src="rooms__item-img" alt="">
+            </a>
+          </li>
+        </ul>
+        <section class="rooms-slider">
+          <button class="rooms-slider__btn  rooms-slider__btn--prev">
+            <span class="visually-hidden">Назад</span>
+          </button>
+          <button class="rooms-slider__btn  rooms-slider__btn--next">
+            <span class="visually-hidden">Вперёд</span>
+          </button>
+          <ul class="rooms-slider-list">
+            <li class="rooms-slider-item  rooms-slider-item--show">
+              <img class="rooms-slider-item__img" src="img/rooms-foyer@1x.png" alt="">
+              <div class="rooms-slider-item__descr-wrap">
+                <h2 class="rooms-slider-item__title">Фойе</h2>
+                <p class="rooms-slider-item__descr">Площадь: 1000 м2</p>
+                <p class="rooms-slider-item__descr">Вместимость: 1000 чел</p>
+              </div>
+              <a class="rooms-slider-item__gallery" href="gallery.html">
+                <img class="rooms-slider-item__gallery-img" src="img/gallery-foyer.png" alt="">
+              </a>
+            </li>
+            <li class="rooms-slider-item">
+              <video class="rooms-slider-item__video" src=""></video>
+              <div class="rooms-slider-item__descr-wrap">
+                <h2 class="rooms-slider-item__title"></h2>
+                <p class="rooms-slider-item__descr"></p>
+                <p class="rooms-slider-item__descr"></p>
+              </div>
+              <a class="rooms-slider-item__gallery" href="gallery.html">
+                <img class="rooms-slider-item__gallery-img" src="" alt="">
+              </a>
+            </li>
+            <li class="rooms-slider-item">
+              <video class="rooms-slider-item__video" src=""></video>
+              <div class="rooms-slider-item__descr-wrap">
+                <h2 class="rooms-slider-item__title"></h2>
+                <p class="rooms-slider-item__descr"></p>
+                <p class="rooms-slider-item__descr"></p>
+              </div>
+              <a class="rooms-slider-item__gallery" href="gallery.html">
+                <img class="rooms-slider-item__gallery-img" src="" alt="">
+              </a>
+            </li>
+            <li class="rooms-slider-item">
+              <video class="rooms-slider-item__video" src=""></video>
+              <div class="rooms-slider-item__descr-wrap">
+                <h2 class="rooms-slider-item__title"></h2>
+                <p class="rooms-slider-item__descr"></p>
+                <p class="rooms-slider-item__descr"></p>
+              </div>
+              <a class="rooms-slider-item__gallery" href="gallery.html">
+                <img class="rooms-slider-item__gallery-img" src="" alt="">
+              </a>
+            </li>
+            <li class="rooms-slider-item">
+              <video class="rooms-slider-item__video" src=""></video>
+              <div class="rooms-slider-item__descr-wrap">
+                <h2 class="rooms-slider-item__title"></h2>
+                <p class="rooms-slider-item__descr"></p>
+                <p class="rooms-slider-item__descr"></p>
+              </div>
+              <a class="rooms-slider-item__gallery" href="gallery.html">
+                <img class="rooms-slider-item__gallery-img" src="" alt="">
+              </a>
+            </li>
+          </ul>
+        </section>
+        <a class="btn  rooms__btn" href="">
+          <span class="rooms__btn-descr">Получить планировку</span>
+        </a>
+      </section>
+    </main>
   </body>
 </html>
