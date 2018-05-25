@@ -17,16 +17,15 @@
 .rooms__btn {
   position: relative;
 
-  width: 78%;
+  width: 250px;
   max-width: 350px;
-  padding-right: 10%;
-  padding-left: 18%;
+  padding-right: 25px;
+  padding-left: 25px;
 }
 
 .rooms__btn-descr {
   position: relative;
 
-  display: block;
   padding-left: 18px;
 
   &::before {

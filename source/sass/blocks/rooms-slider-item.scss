@@ -4,22 +4,11 @@
   display: none;
   flex-direction: column;
   align-items: center;
-  padding-top: 270px;
-  padding-right: 20%;
-  padding-left: 20%;
+  padding-top: 10px;
 
   &--show {
     display: flex;
   }
-}
-
-.rooms-slider-item__img {
-  position: absolute;
-  top: -110px;
-  left: 50%;
-  z-index: 0;
-
-  transform: translate(-50%);
 }
 
 .rooms-slider-item__descr-wrap {
@@ -28,6 +17,8 @@
   align-items: center;
   width: 100%;
   margin-bottom: 15px;
+  padding-right: 20%;
+  padding-left: 20%;
 }
 
 .rooms-slider-item__title {
