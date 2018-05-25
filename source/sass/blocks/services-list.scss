@@ -1,0 +1,18 @@
+.services-list {
+  @include list-reset;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 25px;
+
+    width: 1px;
+    height: 117px;
+
+    background-color: #ffffff;
+    opacity: 0.3;
+  }
+}
