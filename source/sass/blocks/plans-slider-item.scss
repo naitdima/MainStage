@@ -1,0 +1,12 @@
+.plans-slider-item {
+  display: none;
+
+  &--show {
+    display: block;
+  }
+}
+
+.plans-slider-item__img {
+  width: 100%;
+  height: auto;
+}
