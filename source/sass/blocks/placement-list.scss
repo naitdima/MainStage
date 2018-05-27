@@ -1,0 +1,6 @@
+.placement-list {
+  @include list-reset;
+  display: grid;
+  width: 320px;
+  grid-template-columns: repeat(2, 160px);
+}
