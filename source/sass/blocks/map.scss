@@ -1,0 +1,52 @@
+.map {
+  display: grid;
+  padding-top: 190px;
+  padding-right: 25px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+
+  background-image: url("../img/map-bg-mobile@1x.png");
+  background-position: center 77%;
+  background-size: cover;
+
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.map__btn {
+  position: relative;
+
+  width: 130px;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+  padding-left: 28px;
+
+  font-size: 8px;
+  line-height: 10px;
+  text-align: center;
+  color: #949494;
+
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 3px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 12px;
+
+    width: 12px;
+    height: 12px;
+
+    background-size: cover;
+  }
+
+  &--yandnav::before {
+    background-image: url("../img/yandex-nav-icon.svg");
+  }
+
+  &--googlemaps::before {
+    background-image: url("../img/google-maps-icon.svg");
+  }
+}
