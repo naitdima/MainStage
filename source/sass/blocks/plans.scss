@@ -1,0 +1,38 @@
+.plans {
+  display: grid;
+  padding-bottom: 55px;
+
+  background-image: url("../img/plans-bg-mobile@1x.png");
+  background-size: cover;
+}
+
+.plans__list {
+  order: 2;
+  @include list-reset;
+
+  display: grid;
+  justify-content: center;
+  padding-right: 25px;
+  padding-left: 25px;
+
+  grid-gap: 15px;
+  grid-template-columns: minmax(270px, 450px);
+}
+
+.plans__link {
+  display: block;
+  padding: 22px;
+
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 3px;
+
+  &--active {
+    background-color: #ff001a;
+    box-shadow: 0 0 250px rgba(255, 0, 26, 0.6);
+  }
+}

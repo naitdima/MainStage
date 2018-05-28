@@ -1,0 +1,177 @@
+.command {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+}
+
+.command__title {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.command__descr {
+  width: 93%;
+  margin: 0;
+  padding-bottom: 25px;
+
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.command__list {
+  @include list-reset;
+
+  display: grid;
+  margin-bottom: 30px;
+
+  grid-gap: 25px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.command__item {
+  &--add {
+    display: flex;
+    justify-content: center;
+
+    grid-column-end: 4;
+    grid-column-start: 1;
+  }
+}
+
+.command__link {
+  position: relative;
+
+  display: block;
+  padding-top: 70px;
+
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  color: #ffffff;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 50%;
+
+    width: 40px;
+    height: 40px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50%;
+    box-shadow: inset 0 3px 10px rgba(255, 255, 255, 0.4);
+    transform: translateX(-50%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    box-shadow: inset 0 3px 10px rgba(255, 255, 255, 0.4);
+    transform: translateX(-50%);
+    opacity: 0.7;
+  }
+
+  &:hover::before,
+  &:active::before {
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: inset 0 3px 10px rgba(255, 255, 255, 0.4);
+  }
+
+  &--megaphone::before {
+    background-image: url("../img/megaphone-icon.svg");
+  }
+
+  &--gear::before {
+    background-image: url("../img/gear-icon.svg");
+  }
+
+  &--producer::before {
+    background-image: url("../img/producer-icon.svg");
+  }
+
+  &--fish::before {
+    background-image: url("../img/fish-icon.svg");
+  }
+
+  &--camera::before {
+    background-image: url("../img/camera-icon.svg");
+  }
+
+  &--brain::before {
+    background-image: url("../img/brain-icon.svg");
+  }
+
+  &--add {
+    position: relative;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 80px;
+
+    text-align: left;
+  }
+
+  &--add::before {
+    left: 10px;
+
+    background: linear-gradient(135deg, #fb2e49 0%, #ff577f 100%, #ff577f 100%), linear-gradient(180deg, #cf4d96 0%, #c13dc1 100%);
+    box-shadow: 0 3px 20px #fb2e49, inset 0 3px 10px rgba(255, 255, 255, 0.4);
+    transform: none;
+  }
+
+  &--add::after {
+    left: 0;
+
+    background: linear-gradient(135deg, #fb2e49 0%, #ff577f 100%, #ff577f 100%);
+    box-shadow: 0 3px 20px #fb2e49, inset 0 3px 10px rgba(255, 255, 255, 0.4);
+    transform: none;
+    opacity: 0.5;
+  }
+}
+
+.command__add-icon {
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: 23px;
+  z-index: 1;
+
+  display: block;
+  width: 14px;
+  height: 14px;
+
+  background-image: url("../img/add-icon.svg");
+  background-size: cover;
+}
+
+.command__promo {
+  margin: 0;
+
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+}

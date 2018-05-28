@@ -1,0 +1,35 @@
+.features-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.features-item__img {
+  margin-bottom: 15px;
+}
+
+.features-item__descr-wrap {
+  margin: 0;
+}
+
+.features-item__descr {
+  width: 130px;
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.features-item__title {
+  width: 130px;
+
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #ffffff;
+}

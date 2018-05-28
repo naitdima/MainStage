@@ -1,0 +1,49 @@
+.rooms-slider {
+  position: relative;
+
+  margin-bottom: 20px;
+}
+
+.rooms-slider__btn {
+  position: absolute;
+  top: 275px;
+
+  width: 44px;
+  height: 44px;
+
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+
+    width: 8px;
+    height: 16px;
+
+    background-image: url("../img/rooms-slider-btn.svg");
+    background-size: cover;
+    opacity: 0.7;
+  }
+
+  &--prev {
+    left: 7%;
+  }
+
+  &--prev::before {
+    top: 14px;
+    left: 17px;
+  }
+
+  &--next {
+    right: 7%;
+  }
+
+  &--next::before {
+    top: 14px;
+    right: 17px;
+
+    transform: scale(-1, 1);
+  }
+}

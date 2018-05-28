@@ -1,0 +1,73 @@
+.placement-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.placement-item__link {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  min-height: 100px;
+
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+
+  background-size: cover;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: $main-bg-color;
+    background-blend-mode: luminosity;
+    opacity: 0.4;
+  }
+
+  &:hover,
+  &:active {
+    font-size: 0;
+  }
+
+  &:hover::before,
+  &:active::before {
+    background-blend-mode: normal;
+    opacity: 1;
+  }
+
+  &--facade::before {
+    background-image: url("../img/placement-facade-modile@1x.jpg");
+  }
+
+  &--wc::before {
+    background-image: url("../img/placement-wc-modile@1x.jpg");
+  }
+
+  &--toilet::before {
+    background-image: url("../img/placement-toilet-modile@1x.jpg");
+  }
+
+  &--foyer::before {
+    background-image: url("../img/placement-foyer-modile@1x.jpg");
+  }
+
+  &--hall::before {
+    background-image: url("../img/placement-hall-modile@1x.jpg");
+  }
+}

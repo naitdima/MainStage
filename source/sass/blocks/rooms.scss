@@ -1,0 +1,42 @@
+.rooms {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+
+  background-color: #1d2a3b;
+  background-image: url("../img/rooms-bg.png");
+}
+
+.rooms__list {
+  display: none;
+}
+
+.rooms__btn {
+  position: relative;
+
+  width: 250px;
+  max-width: 350px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.rooms__btn-descr {
+  position: relative;
+
+  padding-left: 18px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 8px;
+    height: 11px;
+
+    background-image: url("../img/get-plan.svg");
+  }
+}
