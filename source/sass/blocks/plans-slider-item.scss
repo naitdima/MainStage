@@ -2,11 +2,13 @@
   display: none;
 
   &--show {
-    display: block;
+    display: flex;
+    justify-content: center;
   }
 }
 
 .plans-slider-item__img {
   width: 100%;
-  height: auto;
+  max-width: 450px;
+  height: 100%;
 }

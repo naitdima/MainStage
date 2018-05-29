@@ -1,11 +1,11 @@
 .contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 40px;
-  padding-right: 25px;
+  padding-right: 8%;
   padding-bottom: 30px;
-  padding-left: 25px;
-
-  background-image: url("../img/contacts-bg-mobile@1x.png");
-  background-size: cover;
+  padding-left: 8%;
 }
 
 .contacts__title {
@@ -20,7 +20,7 @@
 
 .contacts-list {
   @include list-reset;
-
+  max-width: 400px;
   margin-bottom: 10px;
 }
 

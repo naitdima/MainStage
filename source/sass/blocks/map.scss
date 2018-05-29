@@ -1,5 +1,6 @@
 .map {
   display: grid;
+  max-width: 400px;
   padding-top: 190px;
   padding-right: 25px;
   padding-bottom: 20px;
@@ -7,7 +8,6 @@
 
   background-image: url("../img/map-bg-mobile@1x.png");
   background-position: center 77%;
-  background-size: cover;
 
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr;

@@ -1,5 +1,6 @@
 .gift {
   display: grid;
+  width: 320px;
   padding-top: 10px;
   padding-right: 25px;
   padding-bottom: 30px;
@@ -15,4 +16,10 @@
   font-size: 12px;
   line-height: 19px;
   color: #ffffff;
+}
+
+.gift__link {
+  width: 138px;
+  height: 42px;
+  padding: 15px 30px;
 }
