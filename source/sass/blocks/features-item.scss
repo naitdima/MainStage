@@ -3,10 +3,12 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  padding-bottom: 25px;
 }
 
 .features-item__img {
   margin-bottom: 15px;
+  mix-blend-mode: screen;
 }
 
 .features-item__descr-wrap {

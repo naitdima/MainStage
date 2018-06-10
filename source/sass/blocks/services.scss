@@ -1,8 +1,14 @@
 .services {
   padding-top: 50px;
+  padding-right: 3%;
   padding-bottom: 55px;
   padding-left: 3%;
-  padding-right: 3%;
+
   background-image: url("../img/services-bg-mobile@1x.png");
-  background-size: cover;
+  background-position: center center;
+  background-size: 100% auto;
+
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("../img/services-bg-mobile@2x.png");
+  }
 }
