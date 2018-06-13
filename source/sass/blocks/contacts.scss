@@ -2,10 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 320px;
   padding-top: 40px;
-  padding-right: 8%;
+  padding-right: 30px;
   padding-bottom: 30px;
-  padding-left: 8%;
+  padding-left: 30px;
 }
 
 .contacts__title {
@@ -20,6 +21,7 @@
 
 .contacts-list {
   @include list-reset;
+
   max-width: 400px;
   margin-bottom: 10px;
 }

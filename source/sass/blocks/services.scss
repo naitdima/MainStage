@@ -1,4 +1,7 @@
 .services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 50px;
   padding-right: 3%;
   padding-bottom: 55px;

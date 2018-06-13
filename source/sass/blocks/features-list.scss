@@ -2,6 +2,7 @@
   @include list-reset;
 
   display: grid;
+  max-width: 320px;
 
   grid-gap: 20px;
   grid-template-columns: repeat(2, 1fr);
