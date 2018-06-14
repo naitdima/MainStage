@@ -23,3 +23,32 @@
   height: 42px;
   padding: 15px 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .gift {
+    width: 768px;
+    padding: 0;
+    padding-right: 55px;
+    padding-bottom: 60px;
+    padding-left: 55px;
+
+    grid-gap: 20px;
+  }
+
+  .gift__descr {
+    width: 220px;
+    padding-top: 14px;
+
+    font-size: 22px;
+    line-height: 35px;
+  }
+
+  .gift__link {
+    width: 415px;
+    height: 80px;
+    padding: 30px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

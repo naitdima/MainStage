@@ -5,4 +5,18 @@
 
   background-image: url("../img/contacts-bg-mobile@1x.png");
   background-size: cover;
+
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("../img/contacts-bg-mobile@2x.png");
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .contacts-wrap {
+    background-image: url("../img/contacts-bg-tablet@1x.png");
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/contacts-bg-tablet@2x.png");
+    }
+  }
 }

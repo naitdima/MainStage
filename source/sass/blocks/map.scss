@@ -11,6 +11,10 @@
 
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr;
+
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("../img/map-bg-mobile@2x.png");
+  }
 }
 
 .map__btn {
@@ -48,5 +52,43 @@
 
   &--googlemaps::before {
     background-image: url("../img/google-maps-icon.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    max-width: 768px;
+    padding-top: 430px;
+    padding-right: 50px;
+    padding-bottom: 65px;
+    padding-left: 50px;
+
+    background-image: url("../img/map-bg-tablet@1x.png");
+    background-position: center 77%;
+
+    grid-gap: 20px;
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/map-bg-tablet@2x.png");
+    }
+  }
+
+  .map__btn {
+    width: 200px;
+    padding-top: 18px;
+    padding-right: 15px;
+    padding-bottom: 18px;
+    padding-left: 50px;
+
+    font-size: 12px;
+    line-height: 14px;
+
+    &::before {
+      top: 12px;
+      left: 18px;
+
+      width: 24px;
+      height: 24px;
+    }
   }
 }

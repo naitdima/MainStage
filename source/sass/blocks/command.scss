@@ -23,7 +23,7 @@
   width: 93%;
   max-width: 320px;
   margin: 0;
-  padding-bottom: 25px;
+  margin-bottom: 25px;
 
   font-size: 12px;
   line-height: 18px;
@@ -178,4 +178,127 @@
   line-height: 18px;
   text-align: center;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .command {
+    padding: 70px;
+  }
+
+  .command__title {
+    margin-bottom: 30px;
+
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .command__descr {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 40px;
+
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .command__list {
+    max-width: 768px;
+    margin-bottom: 55px;
+
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .command__item {
+    &--add {
+      grid-column-end: 4;
+      grid-column-start: 3;
+    }
+  }
+
+  .command__link {
+    padding-top: 116px;
+
+    font-size: 14px;
+    line-height: 20px;
+
+    &::before {
+      top: 18px;
+      left: 50%;
+
+      width: 61px;
+      height: 61px;
+    }
+
+    &::after {
+      width: 96px;
+      height: 96px;
+    }
+
+    &--megaphone::before {
+      background-image: url("../img/megaphone-icon.svg");
+      background-size: 21px 20px;
+    }
+
+    &--gear::before {
+      background-image: url("../img/gear-icon.svg");
+      background-size: 23px 23px;
+    }
+
+    &--producer::before {
+      background-image: url("../img/producer-icon.svg");
+      background-size: 19px 24px;
+    }
+
+    &--fish::before {
+      background-image: url("../img/fish-icon.svg");
+      background-size: 21px 20px;
+    }
+
+    &--camera::before {
+      background-image: url("../img/camera-icon.svg");
+      background-size: 21px 19px;
+    }
+
+    &--brain::before {
+      background-image: url("../img/brain-icon.svg");
+      background-size: 23px 23px;
+    }
+
+    &--add {
+      padding: 0;
+      padding-top: 116px;
+
+      text-align: center;
+    }
+
+    &--add::before {
+      left: 50%;
+
+      transform: translateX(-50%);
+    }
+
+    &--add::after {
+      left: 50%;
+
+      transform: translateX(-50%);
+    }
+  }
+
+  .command__add-icon {
+    top: 38.5px;
+    left: 50%;
+
+    width: 19px;
+    height: 19px;
+
+    transform: translateX(-50%);
+  }
+
+  .command__promo {
+    width: 600px;
+    max-width: none;
+
+    font-size: 18px;
+    line-height: 31px;
+  }
 }

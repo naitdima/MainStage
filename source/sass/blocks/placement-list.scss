@@ -4,3 +4,11 @@
   width: 320px;
   grid-template-columns: repeat(2, 160px);
 }
+
+@media (min-width: $tablet-width) {
+  .placement-list {
+    width: 768px;
+    grid-template-columns: repeat(3, 256px);
+  }
+
+}

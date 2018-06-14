@@ -6,6 +6,7 @@
 
 .placement-item__link {
   position: relative;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,21 +52,90 @@
 
   &--facade::before {
     background-image: url("../img/placement-facade-modile@1x.jpg");
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/placement-facade-modile@2x.jpg");
+    }
   }
 
   &--wc::before {
     background-image: url("../img/placement-wc-modile@1x.jpg");
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/placement-wc-modile@2x.jpg");
+    }
   }
 
   &--toilet::before {
     background-image: url("../img/placement-toilet-modile@1x.jpg");
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/placement-toilet-modile@2x.jpg");
+    }
   }
 
   &--foyer::before {
     background-image: url("../img/placement-foyer-modile@1x.jpg");
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/placement-foyer-modile@2x.jpg");
+    }
   }
 
   &--hall::before {
     background-image: url("../img/placement-hall-modile@1x.jpg");
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/placement-hall-modile@2x.jpg");
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .placement-item__link {
+    width: 256px;
+    min-height: 160px;
+
+    font-size: 14px;
+    line-height: 18px;
+    &--facade::before {
+      background-image: url("../img/placement-facade-tablet@1x.jpg");
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/placement-facade-tablet@2x.jpg");
+      }
+    }
+
+    &--wc::before {
+      background-image: url("../img/placement-wc-tablet@1x.jpg");
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/placement-wc-tablet@2x.jpg");
+      }
+    }
+
+    &--toilet::before {
+      background-image: url("../img/placement-toilet-tablet@1x.jpg");
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/placement-toilet-tablet@2x.jpg");
+      }
+    }
+
+    &--foyer::before {
+      background-image: url("../img/placement-foyer-tablet@1x.jpg");
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/placement-foyer-tablet@2x.jpg");
+      }
+    }
+
+    &--hall::before {
+      background-image: url("../img/placement-hall-tablet@1x.jpg");
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/placement-hall-tablet@2x.jpg");
+      }
+    }
   }
 }

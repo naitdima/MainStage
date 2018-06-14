@@ -85,3 +85,51 @@
   color: #ffffff;
   letter-spacing: 0.2em;
 }
+
+@media (min-width: $tablet-width) {
+  .projects-slider {
+    width: 768px;
+  }
+
+  .projects-slider__btn {
+    top: 188px;
+
+    width: 18px;
+    height: 42px;
+
+    &--prev {
+      left: 55px;
+    }
+
+    &--next {
+      right: 55px;
+    }
+  }
+
+  .projects-slider__indication-wrap {
+    top: 55px;
+    left: 55px;
+  }
+
+  .projects-slider__indicator-list {
+    margin-right: 20px;
+  }
+
+  .projects-slider__indicator-link {
+    width: 8px;
+    height: 8px;
+
+    &--active {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .projects-slider__indication-value {
+    min-width: 85px;
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
