@@ -6,3 +6,50 @@
 .plans-slider__btn {
   display: none;
 }
+
+@media (min-width: $tablet-width) {
+  .plans-slider__btn {
+    position: absolute;
+    top: 180px;
+
+    display: block;
+    width: 60px;
+    height: 60px;
+
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+
+      width: 11px;
+      height: 22px;
+
+      background-image: url("../img/rooms-slider-btn.svg");
+      background-size: cover;
+      opacity: 0.7;
+    }
+
+    &--prev {
+      left: 6%;
+    }
+
+    &--prev::before {
+      top: 19px;
+      left: 23px;
+    }
+
+    &--next {
+      right: 6%;
+    }
+
+    &--next::before {
+      top: 19px;
+      right: 23px;
+
+      transform: scale(-1, 1);
+    }
+  }
+}

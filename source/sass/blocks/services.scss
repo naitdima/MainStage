@@ -15,3 +15,18 @@
     background-image: url("../img/services-bg-mobile@2x.png");
   }
 }
+
+@media (min-width: $tablet-width) {
+  .services {
+    padding-top: 75px;
+    padding-right: 100px;
+    padding-bottom: 70px;
+    padding-left: 20px;
+
+    background-image: url("../img/services-bg-tablet@1x.png");
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/services-bg-tablet@2x.png");
+    }
+  }
+}

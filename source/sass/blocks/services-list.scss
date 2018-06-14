@@ -16,3 +16,17 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .services-list {
+    width: 650px;
+    margin-bottom: 35px;
+
+    &::before {
+      top: 10px;
+      left: 47px;
+
+      height: 183px;
+    }
+  }
+}

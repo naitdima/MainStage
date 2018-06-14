@@ -7,3 +7,11 @@
   grid-gap: 20px;
   grid-template-columns: repeat(2, 1fr);
 }
+
+@media (min-width: $tablet-width) {
+  .features-list {
+    max-width: 768px;
+
+    grid-gap: 60px;
+  }
+}

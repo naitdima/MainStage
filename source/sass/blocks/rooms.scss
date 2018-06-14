@@ -19,7 +19,6 @@
   position: relative;
 
   width: 250px;
-  max-width: 350px;
   padding-right: 25px;
   padding-left: 25px;
 }
@@ -39,5 +38,29 @@
     height: 11px;
 
     background-image: url("../img/get-plan.svg");
+    background-size: cover;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .rooms {
+    padding-bottom: 90px;
+
+    background-image: url("../img/rooms-bg-tablet.svg");
+  }
+
+  .rooms__btn {
+    width: 460px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .rooms__btn-descr {
+    padding-left: 36px;
+
+    &::before {
+      width: 14px;
+      height: 20px;
+    }
   }
 }

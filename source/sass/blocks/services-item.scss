@@ -1,9 +1,13 @@
 .services-item {
   position: relative;
-  max-width: 320px;
 
+  max-width: 320px;
   margin-bottom: 40px;
   padding-left: 60px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &--show {
     margin-top: -20px;
@@ -49,23 +53,153 @@
 
 .services-item__title {
   margin: 0;
-  margin-bottom: 20px;
 
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #ffffff;
+
+  opacity: 0.5;
 }
 
 .services-item--show .services-item__title {
+  margin-bottom: 20px;
+
   font-size: 20px;
   line-height: 26px;
+
+  opacity: 1;
 }
 
 .services-item__descr {
+  display: none;
   margin: 0;
 
   font-size: 12px;
   line-height: 22px;
   color: #ffffff;
+}
+
+.services-item__list {
+  @include list-reset;
+
+  display: none;
+}
+
+.services-item__item {
+  position: relative;
+
+  margin-bottom: 10px;
+
+  font-size: 12px;
+  line-height: 22px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -27px;
+
+    width: 4px;
+    height: 4px;
+
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
+}
+
+.services-item__item-btn {
+  display: none;
+}
+
+.services-item--show .services-item__list {
+  display: block;
+}
+
+.services-item--show .services-item__descr {
+  display: block;
+}
+
+.services-item--show .services-item__item-btn {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .services-item {
+    width: 650px;
+    max-width: none;
+    margin-bottom: 50px;
+    padding-left: 90px;
+
+    &--show {
+      margin-top: -30px;
+      padding-top: 50px;
+      padding-right: 40px;
+      padding-bottom: 60px;
+    }
+
+    &::before {
+      left: 42px;
+
+      width: 10px;
+      height: 10px;
+    }
+
+    &--show::before {
+      top: 60px;
+    }
+
+    &--show::after {
+      top: 52px;
+      left: 34px;
+
+      width: 26px;
+      height: 26px;
+    }
+  }
+
+  .services-item__title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .services-item--show .services-item__title {
+    margin-bottom: 30px;
+
+    font-size: 34px;
+    line-height: 41px;
+  }
+
+  .services-item__item {
+    margin-bottom: 20px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    &::before {
+      top: 8px;
+      left: -46px;
+
+      width: 6px;
+      height: 6px;
+    }
+  }
+
+  .services-item__descr {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .services-item__item-btn {
+    width: 500px;
+    padding-right: 30px;
+    padding-left: 30px;
+
+    font-size: 12px;
+    line-height: 14px;
+  }
 }

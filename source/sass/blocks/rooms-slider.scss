@@ -47,3 +47,43 @@
     transform: scale(-1, 1);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .rooms-slider {
+    width: 655px;
+    margin-bottom: 60px;
+  }
+
+  .rooms-slider__btn {
+    top: 590px;
+
+    width: 60px;
+    height: 60px;
+
+    &::before {
+      width: 11px;
+      height: 22px;
+    }
+
+    &--prev {
+      right: 310px;
+      left: auto;
+    }
+
+    &--prev::before {
+      top: 19px;
+      left: 23px;
+    }
+
+    &--next {
+      right: 0;
+    }
+
+    &--next::before {
+      top: 19px;
+      right: 23px;
+
+      transform: scale(-1, 1);
+    }
+  }
+}

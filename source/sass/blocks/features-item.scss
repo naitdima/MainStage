@@ -8,6 +8,7 @@
 
 .features-item__img {
   margin-bottom: 15px;
+
   mix-blend-mode: screen;
 }
 
@@ -34,4 +35,29 @@
   line-height: 14px;
   text-align: center;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .features-item {
+    padding: 0;
+  }
+
+  .features-item__img {
+    margin-bottom: 25px;
+  }
+
+  .features-item__descr {
+    width: 300px;
+    margin-bottom: 15px;
+
+    font-size: 34px;
+    line-height: 41px;
+  }
+
+  .features-item__title {
+    width: 300px;
+
+    font-size: 18px;
+    line-height: 22px;
+  }
 }

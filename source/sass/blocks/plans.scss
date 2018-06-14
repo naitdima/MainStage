@@ -2,6 +2,7 @@
   position: relative;
 
   display: grid;
+  justify-content: center;
   padding-bottom: 55px;
 
   &::before {
@@ -51,5 +52,36 @@
   &--active {
     background-color: #ff001a;
     box-shadow: 0 0 250px rgba(255, 0, 26, 0.6);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .plans {
+    padding-bottom: 70px;
+
+    &::before {
+      background-image: url("../img/plans-bg-tablet@1x.png");
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/plans-bg-tablet@2x.png");
+      }
+    }
+  }
+
+  .plans__list {
+    order: 2;
+    min-width: 618px;
+    max-width: 768px;
+    margin-right: 75px;
+    margin-left: 75px;
+    padding: 0;
+
+    grid-gap: 18px;
+    grid-template-columns: repeat(2, minmax(300px, 375px));
+  }
+
+  .plans__link {
+    font-size: 18px;
+    line-height: 22px;
   }
 }

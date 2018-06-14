@@ -11,3 +11,12 @@
   background-image: url("../img/fearures-bg-mobile.svg");
   background-repeat: repeat;
 }
+
+@media (min-width: $tablet-width) {
+  .features {
+    padding-top: 35px;
+    padding-bottom: 70px;
+
+    background-image: url("../img/fearures-bg-tablet.svg");
+  }
+}
