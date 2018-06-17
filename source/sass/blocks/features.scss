@@ -20,3 +20,12 @@
     background-image: url("../img/fearures-bg-tablet.svg");
   }
 }
+
+@media (min-width: $desktop-width) {
+  .features {
+    padding-top: 120px;
+    padding-bottom: 105px;
+
+    background-image: url("../img/fearures-bg-desktop.svg");
+  }
+}

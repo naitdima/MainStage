@@ -61,3 +61,17 @@
     line-height: 22px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .features-item__img {
+    margin-bottom: 30px;
+  }
+
+  .features-item__descr {
+    margin-bottom: 20px;
+  }
+
+  .features-item__title {
+    line-height: 29px;
+  }
+}

@@ -30,3 +30,17 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .services-list {
+    width: 740px;
+    margin: 0;
+
+    &::before {
+      top: 43px;
+      left: 67px;
+
+      height: 183px;
+    }
+  }
+}

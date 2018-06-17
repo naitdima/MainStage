@@ -87,3 +87,18 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .rooms-slider {
+    position: absolute;
+    top: 75px;
+    right: 90px;
+
+    width: 840px;
+    margin: 0;
+  }
+
+  .rooms-slider__btn {
+    display: none;
+  }
+}

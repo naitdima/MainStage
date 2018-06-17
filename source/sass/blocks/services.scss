@@ -30,3 +30,18 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .services {
+    padding-top: 80px;
+    padding-right: 505px;
+    padding-bottom: 85px;
+    padding-left: 35px;
+
+    background-image: url("../img/services-bg-desktop@1x.png");
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/services-bg-desktop@2x.png");
+    }
+  }
+}
