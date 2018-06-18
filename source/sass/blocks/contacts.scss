@@ -159,3 +159,70 @@
     line-height: 24px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    display: block;
+    max-width: none;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+
+  .contacts__title {
+    width: 410px;
+    margin-bottom: 70px;
+
+    font-size: 60px;
+    line-height: 72px;
+    text-align: left;
+  }
+
+  .contacts-list {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+
+  .contacts-item {
+    margin-bottom: 45px;
+  }
+
+  .contacts-item__wrap {
+    position: relative;
+
+    display: grid;
+    width: 430px;
+
+    grid-gap: 60px;
+    grid-template-columns: 185px 185px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: 50%;
+
+      width: 1px;
+      height: 32px;
+
+      background-color: #ffffff;
+      opacity: 0.3;
+    }
+  }
+
+  .contacts-item__link {
+    font-size: 20px;
+    line-height: 24px;
+
+    &--phone {
+      width: 185px;
+    }
+
+    &--descr {
+      width: 415px;
+
+      font-size: 20px;
+      line-height: 32px;
+    }
+  }
+}

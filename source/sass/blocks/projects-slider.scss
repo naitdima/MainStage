@@ -133,3 +133,19 @@
     line-height: 18px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .projects-slider {
+    width: 1065px;
+    height: 760px;
+  }
+
+  .projects-slider__btn {
+    top: 358px;
+  }
+
+  .projects-slider__indication-wrap {
+    top: 95px;
+    left: 105px;
+  }
+}

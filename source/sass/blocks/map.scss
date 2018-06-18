@@ -92,3 +92,27 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .map {
+    position: absolute;
+    top: 115px;
+    right: 0;
+    z-index: -1;
+
+    width: 745px;
+    padding-top: 445px;
+    padding-right: 105px;
+    padding-bottom: 105px;
+    padding-left: 220px;
+
+    background-image: url("../img/map-bg-desktop@1x.png");
+    background-position: center 77%;
+
+    grid-gap: 20px;
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/map-bg-desktop@2x.png");
+    }
+  }
+}

@@ -85,3 +85,77 @@
     line-height: 22px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .plans {
+    padding: 0;
+    padding-top: 135px;
+
+    &::before {
+      background-image: url("../img/plans-bg-desktop@1x.png");
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/plans-bg-desktop@2x.png");
+      }
+    }
+  }
+
+  .plans__list {
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    order: 1;
+    min-width: 0;
+    max-width: none;
+    margin: 0;
+    margin-bottom: 90px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      width: 100%;
+      height: 1px;
+
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 51.38%, rgba(255, 255, 255, 0) 100%);
+      opacity: 0.5;
+    }
+  }
+
+  .plans__link {
+    position: relative;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    font-size: 16px;
+    line-height: 19px;
+
+    background-color: transparent;
+    box-shadow: none;
+    opacity: 0.5;
+
+    &--active {
+      font-size: 20px;
+      line-height: 24px;
+
+      opacity: 1;
+    }
+
+    &--active::before {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+
+      width: 100%;
+      height: 7px;
+
+      background-color: #ff001a;
+      box-shadow: 0 0 250px #ff001a;
+    }
+  }
+}

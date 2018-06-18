@@ -52,3 +52,21 @@
     line-height: 24px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .gift {
+    display: flex;
+    justify-content: space-between;
+    width: 520px;
+    padding: 0;
+  }
+
+  .gift__descr {
+    width: 200px;
+    padding-top: 10px;
+  }
+
+  .gift__link {
+    width: 300px;
+  }
+}

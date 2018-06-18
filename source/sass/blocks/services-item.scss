@@ -207,67 +207,42 @@
 @media (min-width: $desktop-width) {
   .services-item {
     width: 740px;
-    margin-bottom: 50px;
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
     padding-left: 110px;
+
+    &:hover {
+      background: linear-gradient(281.04deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+      border-radius: 10px;
+    }
 
     &--show {
       margin: 0;
       padding-right: 80px;
       padding-bottom: 55px;
     }
-    
+
     &::before {
+      top: 37px;
       left: 62px;
     }
 
     &--show::before {
-      top: 60px;
+      top: 40px;
     }
 
     &--show::after {
-      top: 52px;
+      top: 32px;
       left: 54px;
     }
   }
 
-  .services-item__title {
-    font-size: 24px;
-    line-height: 29px;
-  }
-
-  .services-item--show .services-item__title {
-    margin-bottom: 30px;
-
-    font-size: 34px;
-    line-height: 41px;
-  }
-
-  .services-item__item {
-    margin-bottom: 20px;
-
-    font-size: 16px;
-    line-height: 24px;
-
-    &::before {
-      top: 8px;
-      left: -46px;
-
-      width: 6px;
-      height: 6px;
-    }
-  }
-
-  .services-item__descr {
-    font-size: 16px;
-    line-height: 24px;
+  .services-item__list {
+    margin-bottom: 40px;
   }
 
   .services-item__item-btn {
-    width: 500px;
-    padding-right: 30px;
-    padding-left: 30px;
-
-    font-size: 12px;
-    line-height: 14px;
+    width: 550px;
   }
 }

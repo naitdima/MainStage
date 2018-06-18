@@ -1,14 +1,26 @@
 .placement-list {
   @include list-reset;
+
   display: grid;
   width: 320px;
+
   grid-template-columns: repeat(2, 160px);
 }
 
 @media (min-width: $tablet-width) {
   .placement-list {
     width: 768px;
+
     grid-template-columns: repeat(3, 256px);
   }
+}
 
+@media (min-width: $desktop-width) {
+  .placement-list {
+    width: 215px;
+    height: 760px;
+    overflow-y: scroll;
+
+    grid-template-columns: 215px;
+  }
 }

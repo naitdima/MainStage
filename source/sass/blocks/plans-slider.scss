@@ -53,3 +53,40 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .plans-slider {
+    position: relative;
+    margin: 0;
+  }
+
+  .plans-slider__btn {
+    top: 215px;
+
+    width: 67px;
+    height: 67px;
+
+    &::before {
+      width: 12px;
+      height: 24px;
+    }
+
+    &--prev {
+      left: 35px;
+    }
+
+    &--prev::before {
+      top: 22px;
+      left: 27px;
+    }
+
+    &--next {
+      right: 35px;
+    }
+
+    &--next::before {
+      top: 22px;
+      right: 27px;
+    }
+  }
+}

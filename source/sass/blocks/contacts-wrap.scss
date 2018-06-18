@@ -11,12 +11,29 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .contacts-wrap {
     background-image: url("../img/contacts-bg-tablet@1x.png");
 
     @media (min-resolution: 1.5dppx) {
       background-image: url("../img/contacts-bg-tablet@2x.png");
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts-wrap {
+    position: relative;
+    display: block;
+    padding-top: 110px;
+    padding-left: 105px;
+    padding-right: 655px;
+    padding-bottom: 100px;
+
+    background-image: url("../img/contacts-bg-desktop@1x.png");
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/contacts-bg-desktop@2x.png");
     }
   }
 }

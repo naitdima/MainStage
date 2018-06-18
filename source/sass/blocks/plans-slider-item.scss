@@ -13,11 +13,17 @@
   height: 100%;
 }
 
-
 @media (min-width: $tablet-width) {
   .plans-slider-item__img {
     max-width: 768px;
     margin-right: 75px;
     margin-left: 75px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .plans-slider-item__img {
+    max-width: none;
+    margin: 0;
   }
 }
