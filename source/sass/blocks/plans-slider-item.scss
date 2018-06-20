@@ -23,7 +23,9 @@
 
 @media (min-width: $desktop-width) {
   .plans-slider-item__img {
+    width: 890px;
     max-width: none;
+    height: 500px;
     margin: 0;
   }
 }
